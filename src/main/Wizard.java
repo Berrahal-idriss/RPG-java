@@ -3,6 +3,11 @@ package main;
 
 public class Wizard extends Personnage{
 
+    //Atributs
+    private String className;
+    private Fate fate;
+    private String potion;
+
     //Default Constructors
     public Wizard() {
     }
@@ -12,11 +17,10 @@ public class Wizard extends Personnage{
     public Wizard(String name) {
     }
 
-    public Wizard(String name, String image, int health, int damage, String fateName,int fateDamage, String potion) {
-        this.name = name;
-        this.image = image;
-        this.health = health;
-        this.damage = damage;
+    public Wizard(String className,String name, String image, int health, int damage, String fateName,int fateDamage, String potion) {
+        super(name,image,health,damage);
+        this.className = className;
+
         this.potion = potion;
         Fate sort = new Fate(fateName,fateDamage);
         this.fate = sort;
@@ -25,7 +29,7 @@ public class Wizard extends Personnage{
                     //Methods//
 
     //getters
-
+    public String getClassName(){return className;}
 
     public Fate getFate() {
         return fate;
@@ -37,6 +41,7 @@ public class Wizard extends Personnage{
 
     //setter
 
+    public String setclassName(){return className;}
 
     public Fate setFate() {
         return fate;
@@ -49,19 +54,12 @@ public class Wizard extends Personnage{
 
     public String toString() {
 
-        return " Name:" + this.name +
-                " Health:" + this.health +
-                " Damage:" + this.damage +
-                " Weapon name:" + this.fate +
+        return " Name:" + this.name +"\n"+
+                " Health:" + this.health +"\n"+
+                " Damage:" + this.damage +"\n"+
+                " Weapon name:" + this.fate +"\n"+
                 " Shield:" + this.potion;
     }
 
-    //Atributs
 
-    private String name;
-    private String image;
-    private int health;
-    private int damage;
-    private Fate fate;
-    private String potion;
 }

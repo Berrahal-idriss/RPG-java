@@ -2,19 +2,23 @@ package main;
 
 
 public class Warrior extends Personnage {
+
+    //Attributs
+    private String className;
+    private Weapon weapon;
+    private String shield;
+
     //DefaultConstructors
     public Warrior() {
     }
 
     //Other Constructors
     public Warrior(String name) {
-    }
-    public Warrior(String name, String image, int health, int damage, String weaponName,int weaponDamage, String shield) {
 
-        this.name = name;
-        this.image = image;
-        this.health = health;
-        this.damage = damage;
+    }
+    public Warrior(String className,String name, String image, int health, int damage, String weaponName,int weaponDamage, String shield) {
+        super(name,image,health,damage);
+        this.className = className;
         Weapon arme = new Weapon (weaponName,weaponDamage);
         this.weapon = arme;
         this.shield = shield;
@@ -55,13 +59,7 @@ public class Warrior extends Personnage {
                 " Shield:" + this.shield;
     }
 
-    //Attributs
-    private String name;
-    private String image;
-    private int health;
-    private int damage;
-    private Weapon weapon;
-    private String shield;
+
 }
 
 
