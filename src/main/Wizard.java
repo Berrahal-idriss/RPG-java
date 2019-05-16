@@ -1,7 +1,7 @@
 package main;
 
 
-public class Wizard {
+public class Wizard extends Personnage{
 
     //Default Constructors
     public Wizard() {
@@ -20,29 +20,12 @@ public class Wizard {
         this.potion = potion;
         Fate sort = new Fate(fateName,fateDamage);
         this.fate = sort;
-
-
     }
 
+                    //Methods//
 
-    //Methods
+    //getters
 
-
-    public String getName() {
-        return name;
-    }
-
-    public String getImg() {
-        return image;
-    }
-
-    public int getHealth() {
-        return health;
-    }
-
-    public int getDamage() {
-        return damage;
-    }
 
     public Fate getFate() {
         return fate;
@@ -51,6 +34,18 @@ public class Wizard {
     public String getPotion() {
         return potion;
     }
+
+    //setter
+
+
+    public Fate setFate() {
+        return fate;
+    }
+
+    public String setPotion() {
+        return potion;
+    }
+
 
     public String toString() {
 

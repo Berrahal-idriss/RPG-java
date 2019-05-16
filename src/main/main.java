@@ -4,9 +4,9 @@ import java.util.Scanner;
 
 public class main {
     public static Wizard[] tabWiz = new Wizard[10];
-    public static int i = 0;
+
     public static Warrior[] tabWar = new Warrior[10];
-    public static int j = 0;
+
 
     public static void main(String[] args) {
 //        for(int i=0;i <= 5;i++){
@@ -109,6 +109,7 @@ public class main {
         for (int v = 0; v < tabWiz.length; v++) {
             if (tabWiz[v] != null) {
                 System.out.println(tabWiz[v]);
+
             }
         }
 
@@ -123,7 +124,7 @@ public class main {
     }
     public static void mainMenu() {
         Scanner scannerChoice = new Scanner(System.in);
-        System.out.println("1)Create an other character"+"\n"+"2)Show Characters"+"\n"+"3)Quit");
+        System.out.println("1)Create an other character"+"\n"+"2)Show Characters"+"\n"+"3)Remove a character"+"\n"+"4)Modify a character"+"\n"+"5)Quit");
 
         String choice = scannerChoice.nextLine();
         if(choice.equals("1"))
@@ -134,6 +135,14 @@ public class main {
         {
             afficheMenu();
 
+        }
+        else if(choice.equals("3"))
+        {
+           //Supprimer un personnage
+        }
+        else if(choice.equals("4"))
+        {
+            //Modifier infos personnage
         }
         else
         {

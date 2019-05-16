@@ -1,12 +1,10 @@
 package main;
 
 
-public class Warrior {
+public class Warrior extends Personnage {
     //DefaultConstructors
     public Warrior() {
     }
-
-    ;
 
     //Other Constructors
     public Warrior(String name) {
@@ -14,7 +12,6 @@ public class Warrior {
     public Warrior(String name, String image, int health, int damage, String weaponName,int weaponDamage, String shield) {
 
         this.name = name;
-
         this.image = image;
         this.health = health;
         this.damage = damage;
@@ -25,22 +22,11 @@ public class Warrior {
 
 
 
-    //Methods
-    public String getName() {
-        return name;
-    }
+                //Methods
 
-    public String getImg() {
-        return image;
-    }
 
-    public int getHealth() {
-        return health;
-    }
+    //getters
 
-    public int getDamage() {
-        return damage;
-    }
 
     public Weapon getWeapon() {
         return weapon;
@@ -49,6 +35,17 @@ public class Warrior {
     public String getShield() {
         return shield;
     }
+
+    //setters
+
+    public Weapon setWeapon() {
+        return weapon;
+    }
+
+    public String setShield() {
+        return shield;
+    }
+
     public String toString() {
 
         return " Name:" + this.name + "\n" +
