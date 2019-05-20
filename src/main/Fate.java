@@ -1,6 +1,6 @@
 package main;
 
-public class Fate {
+public class Fate extends Wizard {
     //Default Constructor//
     public Fate() {
     }
@@ -19,6 +19,18 @@ public class Fate {
         return damage;
     }
 
+    public void setName(String name)
+    {
+        this.name = name;
+    }
+
+    //Methods
+    public String toString() {
+
+        return "\n"+" Name:" + this.name + "\n" +
+                " Damage:" + this.damage ;
+
+    }
     //Attributs
     private String name;
     private int damage;

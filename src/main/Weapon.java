@@ -19,6 +19,13 @@ public class Weapon {
         return damage;
     }
 
+    //Methods
+    public String toString() {
+
+        return "\n"+" Weapon Name:" + this.name + "\n" +
+                " Weapon Damage:" + this.damage ;
+
+    }
     //Attributs
     private String name;
     private int damage;

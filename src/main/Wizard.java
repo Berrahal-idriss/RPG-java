@@ -54,11 +54,11 @@ public class Wizard extends Personnage{
 
     public String toString() {
 
-        return " Name:" + this.name +"\n"+
-                " Health:" + this.health +"\n"+
-                " Damage:" + this.damage +"\n"+
-                " Weapon name:" + this.fate +"\n"+
-                " Shield:" + this.potion;
+        return " 1)Name:" + this.name +"\n"+
+                " 2)Health:" + this.health +"\n"+
+                " 3)Damage:" + this.damage +"\n"+
+                " 4)Weapon:" + this.fate +
+                " 5)Shield:" + this.potion;
     }
 
 

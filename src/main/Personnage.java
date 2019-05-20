@@ -49,20 +49,21 @@ public class Personnage {
 
     //setter
 
-    public String setName() {
-        return name;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String setImg() {
-        return image;
+    public void setImg(String image) {
+        this.image = image;
     }
 
-    public int setHealth() {
-        return health;
+    public void setHealth(int health) {
+        this.health = health;
     }
 
-    public int setDamage() {
-        return damage;
+    public void setDamage(int damage) {
+        this.damage = damage;
+
     }
 
 

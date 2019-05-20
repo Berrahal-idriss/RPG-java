@@ -52,11 +52,11 @@ public class Warrior extends Personnage {
 
     public String toString() {
 
-        return " Name:" + this.name + "\n" +
-                " Health:" + this.health + "\n" +
-                " Damage:" + this.damage + "\n" +
-                " Weapon name:" + this.weapon + "\n" +
-                " Shield:" + this.shield;
+        return "1) Name:" + this.name + "\n" +
+                " 2)Health:" + this.health + "\n" +
+                " 3)Damage:" + this.damage + "\n" +
+                " 4)Weapon:" + this.weapon  +
+                " 5)Shield:" + this.shield;
     }
 
 
